@@ -1,8 +1,12 @@
 <template>
-  <v-card class="elevation-12">
+  <v-card>
     <!-- Header -->
-    <v-toolbar dark color="primary">
-      <v-toolbar-title>Login</v-toolbar-title>
+    <v-toolbar light color="amber" flat>
+      <v-toolbar-title class="headline text-uppercase">
+        <span class="title ml-3 mr-5">
+          GEM&nbsp;<span class="font-weight-light">Online</span>
+        </span>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-toolbar>
 
@@ -36,7 +40,8 @@
     <v-card-actions>
       <v-spacer></v-spacer>
       <v-btn
-        color="primary"
+        flat
+        color="amber"
         @click="onLoginButtonClicked"
         name="submit"
         ref="submit"

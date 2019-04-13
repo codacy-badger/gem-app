@@ -7,6 +7,19 @@ export interface User {
   disabled: boolean;
 }
 
+/** Proposal */
+export interface Proposal {
+  id: number;
+  title: string;
+  content: string;
+}
+
+export const EmptyProposal: Proposal = {
+  id: 0,
+  title: "",
+  content: ""
+};
+
 /** Anonymous user */
 export const AnonymousUser: User = {
   id: -1,
